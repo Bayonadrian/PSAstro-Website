@@ -1,0 +1,28 @@
+---
+import Logo from "./components/desktop/logo"
+import { NavTabs } from "./components/desktop/nav-tabs"
+import MobileNavBar from "./components/mobile/mobile-navtabs"
+---
+
+<div class="fixed top-0 left-0 w-full bg-white z-50">
+    <div class="hidden lg:grid grid-cols-4 gap-30 content-center py-2">
+        <Logo/>
+        <NavTabs client:load/>
+        <div class="flex justify-center items-center">
+            <div>
+            <button class="bg-zinc-700 hover:bg-zinc-500 text-white font-bold py-1 px-4 rounded scale-80">
+                Signin
+            </button>
+            </div>
+            <div>
+            <button class="bg-zinc-700 hover:bg-zinc-500 text-white font-bold py-1 px-4 rounded scale-80">
+                Signup
+            </button>
+            </div>
+        </div>
+    </div>
+    <div class="lg:hidden grid grid-cols-3 py-2">
+        <MobileNavBar client:load/>
+        <Logo/>
+    </div>
+</div>
