@@ -7,9 +7,13 @@ function AboutUs() {
   useEffect(() => {
     const typed = new Typed(typedRef.current, {
       strings: [
-        "The Polysight uses advances in political and computer science to create high-frequency, systematic country risk data and analytics that are transparent and can be validated.",
-        "Our geopolitical forecasts are highly accurate because they are built on robust models. When they’re wrong, you’ll know that, too.",
-        "Start analysis now!",
+        "We don't follow events — we anticipate them. Our systems are designed to capture the invisible shifts before they become visible headlines.",
+        "Every actor, every region, every risk is unique. We reject one-size-fits-all models and build intelligence tools tailored to specific realities.",
+        "Geopolitical meaning is not static. Our indices evolve based on the user's perspective, objective, sector, and geographic focus — because impact is always relative.",
+        "We don't rely blindly on automation. We guide AI with geopolitical expertise, making it focused, interpretable, and grounded in what matters.",
+        "We uphold neutrality and transparency. Our insights are unbiased, our logic is explainable, and our systems are not tied to political narratives.",
+        "In a fast-moving world, speed is crucial — but not at the cost of depth. Our models balance real-time updates with structured analysis that adds lasting value.",
+        "Our intelligence is built around you. Whether you're a policymaker, investor, security strategist, or humanitarian actor — we tailor insight to your mission. "
       ],
       typeSpeed: 60,
       backSpeed: 40,

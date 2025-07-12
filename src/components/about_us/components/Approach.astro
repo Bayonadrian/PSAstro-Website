@@ -1,67 +1,70 @@
 ---
-const items = [
-  { 
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 24 24"><path fill="#EEEEEE" d="M6 9a3 3 0 1 0 0 6a3 3 0 0 0 0-6m-5 3a5 5 0 0 1 8.192-3.848A4 4 0 0 1 12 7c1.095 0 2.086.44 2.808 1.152a5 5 0 1 1-1.264 1.578A2 2 0 0 0 12 9c-.62 0-1.177.283-1.544.73A5 5 0 1 1 1 12m17-3a2.996 2.996 0 0 0-3 3a3 3 0 1 0 3-3"/></svg>`, 
-    title: "Global Monitoring",
-    text: "We capture and organize relevant information from thousands of public and constantly updated sources around the world."
-  },
-  { 
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 24 24"><g fill="none" stroke="#EEEEEE" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor"><path d="M11.422 7.378c.273-.252.41-.378.578-.378s.305.126.578.378l.466.43c.143.133.215.199.306.227c.092.028.19.015.388-.012l.642-.086c.376-.051.565-.076.7.018c.137.094.17.273.235.63l.112.609c.035.188.052.281.109.356c.056.074.144.118.32.208l.573.29c.336.17.504.254.556.407s-.032.315-.199.641l-.284.556c-.088.17-.132.256-.132.348s.044.177.132.348l.284.556c.167.326.25.489.199.641c-.052.153-.22.238-.556.408l-.573.29c-.176.089-.264.133-.32.207c-.057.075-.074.168-.109.356l-.112.609c-.065.357-.098.536-.234.63s-.325.069-.701.018l-.642-.086c-.197-.027-.296-.04-.388-.012c-.091.028-.163.095-.306.227l-.466.43c-.273.252-.41.378-.578.378s-.305-.126-.578-.378l-.466-.43c-.143-.133-.215-.199-.306-.227c-.092-.028-.19-.015-.388.012l-.642.086c-.376.051-.565.076-.7-.018c-.137-.094-.17-.273-.235-.63l-.112-.609c-.035-.187-.052-.281-.108-.355c-.057-.075-.145-.12-.321-.209l-.573-.29c-.336-.17-.504-.254-.556-.407s.032-.315.199-.641l.284-.556c.088-.17.132-.256.132-.348s-.044-.177-.132-.348l-.284-.556c-.167-.326-.25-.489-.199-.641c.052-.153.22-.238.556-.408l.573-.29c.176-.089.264-.133.32-.207c.057-.075.074-.168.109-.356l.112-.609c.065-.357.098-.536.234-.63s.325-.069.701-.018l.642.086c.197.027.296.04.388.012c.091-.028.163-.094.306-.227z"/><path d="M6.483 3.658a2 2 0 1 0-2.825 2.825m2.825-2.825a2 2 0 0 1-2.825 2.825m2.825-2.825A9.95 9.95 0 0 1 12 2c5.523 0 10 4.477 10 10a9.95 9.95 0 0 1-1.647 5.5M3.658 6.483A9.95 9.95 0 0 0 2 12c0 5.523 4.477 10 10 10a9.95 9.95 0 0 0 5.517-1.658m0 0a2 2 0 1 0 2.966-2.684a2 2 0 0 0-2.966 2.684"/></g></svg>`, 
-    title: "Smart Preprocessing",
-    text: "We structure and optimize raw data to prepare it for deeper analysis by using advanced NLP algorithms, and AI models."
+const cards= [
+  {
+    "title": "Automated Cloud-Based Data Collection for Global Media Analysis",
+    "description": "We built an automated system that collects thousands of news articles daily, turning raw media data into insights on global narratives, sentiment, and regional trends.",
+    "icon": "/icons/Internet.svg"
   },
   {
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 24 24"><path fill="none" stroke="#EEEEEE" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m12 20l-3 1v-8.5L4.52 7.572A2 2 0 0 1 4 6.227V4h16v2.172a2 2 0 0 1-.586 1.414L15 12v1.5m2.001 5.5a2 2 0 1 0 4 0a2 2 0 1 0-4 0m2-3.5V17m0 4v1.5m3.031-5.25l-1.299.75m-3.463 2l-1.3.75m0-3.5l1.3.75m3.463 2l1.3.75"/></svg>`,
-    title: "Intelligent Filtering",
-    text: "We apply advanced methods to separate meaningful signals from informational noise."
+    "title": "Custom-Built Summaries",
+    "description": "Thousands of global news articles are processed daily through AI-enhanced pipelines to create Enhanced Intelligence (EI) summaries. These are structured, tagged, and made analyzable.",
+    "icon": "/icons/Summary.svg"
   },
   {
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 14 14"><path fill="#EEEEEE" fill-rule="evenodd" d="M1.516 6.36a4.844 4.844 0 1 1 9.687 0a4.844 4.844 0 0 1-9.687 0M6.359.015a6.344 6.344 0 1 0 3.723 11.48l2.195 2.195a1 1 0 0 0 1.415-1.414l-2.196-2.195A6.344 6.344 0 0 0 6.36.016Zm-.745 4.026a.625.625 0 0 1 0 .884L4.056 6.484l1.558 1.558a.625.625 0 0 1-.884.884l-2-2a.625.625 0 0 1 0-.884l2-2a.625.625 0 0 1 .884 0Zm2.5 0a.625.625 0 0 0-.884.884l1.558 1.558L7.23 8.042a.625.625 0 0 0 .884.884l2-2a.625.625 0 0 0 0-.884z" clip-rule="evenodd"/></svg>`,
-    title: "Advanced Analysis",
-    text: "Using cutting-edge techniques in NLP, AI, and proprietary algorithms, we extract key patterns and hidden dynamics from the data."
+    "title": "Modular Algorithms",
+    "description": "For each conflict or case, we deploy conflict-specific algorithms. No generic model, no universal formula. Our tools evolve with the scenario.",
+    "icon": "/icons/Algorithm.svg"
   },
   {
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 24 24"><g fill="none" stroke="#EEEEEE" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 5a3 3 0 1 0-5.997.125a4 4 0 0 0-2.526 5.77a4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/><path d="M9 13a4.5 4.5 0 0 0 3-4M6.003 5.125A3 3 0 0 0 6.401 6.5m-2.924 4.396a4 4 0 0 1 .585-.396M6 18a4 4 0 0 1-1.967-.516M12 13h4m-4 5h6a2 2 0 0 1 2 2v1M12 8h8m-4 0V5a2 2 0 0 1 2-2"/><circle cx="16" cy="13" r=".5"/><circle cx="18" cy="3" r=".5"/><circle cx="20" cy="21" r=".5"/><circle cx="20" cy="8" r=".5"/></g></svg>`,
-    title: "Contextual Interpretation",
-    text: "We analyze the information within its geopolitical, economic, and social context to uncover critical trends and shifts."
+    "title": "Dynamic Modeling",
+    "description": "From escalation forecasts to strategic degradation scores, our models adapt to regional sensitivities and event-specific indicators.",
+    "icon": "/icons/Model.svg"
   },
   {
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 24 24"><g fill="none" stroke="#EEEEEE" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="8" cy="16" r=".5"/><path d="M18 2h4v5h-3v3h-3v2l-2.3 2.3a6 6 0 1 1-4-4Z"/></g></svg>`,
-    title: "Index Construction",
-    text: "We translate complex analysis into clear, comparable, and continuously updated indices designed to support decision-making with key data."
+    "title": "Structured Decision Logic",
+    "description": "Our frameworks include tailored logic blocks that guide AI evaluation based on context, risk profiles, actor behavior, and long-term scenarios.",
+    "icon": "/icons/Decision logic.svg"
   }
-  ,
-  {
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 512 512"><g fill="#EEEEEE" fill-rule="evenodd" clip-rule="evenodd"><path d="M426.667 125.489H85.333v20.078h341.334zM85.333 386.508V185.724h341.334v200.784zM42.667 85.332v341.333h426.666V85.332zm320 149.333v128h42.666v-128zm-64 128v-85.333h42.666v85.333zm-64-21.333v21.333h42.666v-21.333z"/><path d="M170.667 362.665c41.237 0 74.666-33.429 74.666-74.666c0-41.238-33.429-74.667-74.666-74.667c-41.238 0-74.667 33.429-74.667 74.667s33.429 74.666 74.667 74.666m35.476-50.962a42.67 42.67 0 0 0 7.19-23.704h-42.666v-42.667a42.66 42.66 0 0 0-39.419 26.339a42.664 42.664 0 0 0 31.095 58.175a42.67 42.67 0 0 0 43.8-18.143"/></g></svg>`,
-    title: "Dashboard Development",
-    text: "We build intuitive and dynamic dashboards that transform our indices into actionable insights, providing a clear and real-time view of global dynamics."
-  }
-];
+]
 ---
 
 <section class="w-full flex justify-center" id="approach">
-  <div class="w-full flex flex-col gap-8 px-50 py-15 bg-neutral-500">
-    <h1 class="text-center max-w-2xl mx-auto bg-stone-50 px-6 py-4 rounded-lg shadow-md text-zinc-900 text-4xl font-semibold opacity-70">
+  <div class="w-full flex flex-col gap-8 px-8 py-15 bg-neutral-600">
+    <h1 class="text-center max-w-2xl mx-auto bg-stone-50 px-6 py-4 rounded-lg shadow-md text-zinc-900 text-3xl font-semibold opacity-70">
       Our Approach
     </h1>
-    {items.map((item, index) => (
-      <div>
-        <div class={`flex items-center gap-4 ${index % 2 === 0 ? "flex-row" : "flex-row-reverse"}`}>
-          <div class="w-1/2 flex justify-center">
-            <div>
-              <p class="text-slate-100 text-7xl font-semibold">{index + 1}.</p>
-            </div>
-            <div set:html={item.icon}></div>
+
+    <div class="max-w-3xl mx-auto transition-transform duration-400 hover:scale-110">
+      <img src="/image/Model.png" alt="">
+    </div>
+
+    <section class="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-8 py-12">
+      {cards.slice(0, 3).map((card) => (
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col w-full max-w-sm transition-transform duration-300 hover:scale-105">
+          <div class="bg-gray-600 p-8 flex items-center justify-center">
+            <img src={card.icon} alt={card.title} class="h-30 w-30" />
           </div>
-          <div class="w-1/2 text-lg">
-            <p class="font-semibold text-xl text-slate-100">{item.title}</p>
-            <br/>
-            <p class="text-slate-200 text-md">{item.text}</p>
+          <div class="p-6 flex flex-col">
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">{card.title}</h3>
+            <p class="text-gray-700">{card.description}</p>
           </div>
         </div>
-        {index !== items.length - 1 ? <br><hr class="border-t border-slate-200 my-6" /> : null}
+      ))}
+
+      <div class="lg:col-span-3 flex justify-center gap-10">
+        {cards.slice(3).map((card) => (
+          <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col w-full max-w-sm transition-transform duration-300 hover:scale-105">
+            <div class="bg-gray-600 p-8 flex items-center justify-center">
+              <img src={card.icon} alt={card.title} class="h-30 w-30" />
+            </div>
+            <div class="p-6 flex flex-col">
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">{card.title}</h3>
+              <p class="text-gray-700">{card.description}</p>
+            </div>
+          </div>
+        ))}
       </div>
-    ))}
+    </section>
+
   </div>
 </section>
-

@@ -4,8 +4,7 @@ function Product() {
     return (
         <div className="w-full max-w-6xl mx-auto text-center text-4xl text-stone-700 font-semibold py-8 relative">
             <p>
-                The Polysight is a platform built for businesses navigating geopolitical complexity.
-                Automate geopolitical risk assessments, monitor global trends, and access actionable intelligence—all in one streamlined interface.
+                We harness the power of advanced AI, real-time automation, and custom-built data systems to detect, decode, and deliver early signals of global change. While open source data is a vital layer of our analysis, it is only the beginning. We combine it with alternative sources, structured databases, and in-house generated datasets — all processed through proprietary models designed by geopolitical risk experts for geopolitical complexity.  
             </p>
 
             <br />
