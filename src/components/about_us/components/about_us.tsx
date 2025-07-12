@@ -27,7 +27,7 @@ function AboutUs() {
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-white p-4" id="about_us">
-      <div className="relative w-[99%] max-w-8xl h-[500px] md:h-[650px] rounded-t-2xl rounded-b-2xl overflow-hidden shadow-lg">
+      <div className="relative w-[99%] max-w-8xl h-[700px] md:h-[650px] rounded-t-2xl rounded-b-2xl overflow-hidden shadow-lg">
         
         <video
           autoPlay
@@ -39,12 +39,12 @@ function AboutUs() {
           Your web browser does not tolerate videos
         </video>
 
-        <div className="absolute top-5 left-1/2 transform -translate-x-1/2 bg-stone-50 px-6 py-2 rounded-md shadow-md text-zinc-900 text-4xl font-semibold z-10 opacity-70">
+        <div className="absolute top-5 left-1/2 transform -translate-x-1/2 bg-stone-50 px-6 py-2 rounded-md shadow-md text-zinc-900 text-2xl md:text-5xl font-semibold z-10 opacity-70">
           About Us
         </div>
         
         <div className="absolute inset-0 flex flex-col items-center justify-center px-4">
-          <div className="bg-stone-50 px-10 py-5 rounded-md shadow-md text-zinc-900 text-xl opacity-80 max-w-4xl text-center">
+          <div className="bg-stone-50 px-10 py-5 rounded-md shadow-md text-zinc-900 text-sm md:text-xl opacity-80 max-w-4xl text-center">
             <span ref={typedRef}></span>
           </div>
 
