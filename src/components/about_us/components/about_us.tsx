@@ -48,12 +48,31 @@ function AboutUs() {
             <span ref={typedRef}></span>
           </div>
 
-          <form className="mt-6 flex items-center bg-white rounded-sm shadow-md overflow-hidden w-full max-w-lg opacity-90">
+          <div className="mt-6 flex items-center bg-white rounded-sm shadow-md overflow-hidden w-full max-w-lg opacity-90">
             <input
               type="email"
-              placeholder="Your email"
+              placeholder="Subscribe to our newsletter"
               className="flex-1 px-4 py-2 text-gray-700 focus:outline-none"
               required
+              readOnly
+            />
+            <button
+              type="button"
+              className="bg-neutral-700 hover:bg-neutral-800 text-gray-300 px-2 py-2 flex items-center justify-center gap-2 font-semibold"
+              onClick={() => window.open('https://forms.office.com/r/3dBK96zBWf', '_blank')}
+            >
+              Subscribe
+            </button>
+          </div>
+
+
+          {/*<form className="mt-6 flex items-center bg-white rounded-sm shadow-md overflow-hidden w-full max-w-lg opacity-90">
+            <input
+              type="email"
+              placeholder="Subscribe to our newsletter"
+              className="flex-1 px-4 py-2 text-gray-700 focus:outline-none"
+              required
+              readOnly
             />
             <button
               type="submit"
@@ -61,7 +80,7 @@ function AboutUs() {
             >
               Subscribe
             </button>
-          </form>
+          </form>*/}
         </div>
       </div>
     </div>

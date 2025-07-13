@@ -26,8 +26,8 @@ export function NavTabs () {
                     <Tab setPosition={setPosition} href="#about_us">About Us</Tab>
                     <Tab setPosition={setPosition} href="#approach">Our Approach</Tab>
                     <Tab setPosition={setPosition} href="#contact_us">Contact us</Tab>
-                    <Tab setPosition={setPosition} href="#docs">Public Reports</Tab>
-                    <Tab setPosition={setPosition} href="#blog">Blog</Tab>
+                    {/*<Tab setPosition={setPosition} href="#docs">Public Reports</Tab>
+                    <Tab setPosition={setPosition} href="#blog">Blog</Tab>*/}
             
                     <motion.li
                     animate={{

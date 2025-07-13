@@ -10,15 +10,17 @@ import MobileNavBar from "./components/mobile/mobile-navtabs"
         <NavTabs client:load/>
         <div class="flex justify-center items-center">
             <div>
-            <button class="bg-zinc-700 hover:bg-zinc-500 text-white font-bold py-1 px-4 rounded scale-80">
+            <button type="button" 
+            class="bg-zinc-700 hover:bg-zinc-500 text-white font-bold py-1 px-4 rounded scale-80"
+            onclick="window.open('https\://forms.office.com/r/3dBK96zBWf', '_blank')">
                 Signin
             </button>
             </div>
-            <div>
+            {/*<div>
             <button class="bg-zinc-700 hover:bg-zinc-500 text-white font-bold py-1 px-4 rounded scale-80">
                 Signup
             </button>
-            </div>
+            </div>*/}
         </div>
     </div>
     <div class="lg:hidden grid grid-cols-3 py-2">
