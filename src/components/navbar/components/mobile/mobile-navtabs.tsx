@@ -53,13 +53,10 @@ const MobileNavBar = () => {
               <a href="#about_us" className="text-black text-lg" onClick={() => setIsOpen(false)}>About Us</a>
             </li>
             <li>
-              <a href="#features" className="text-black text-lg" onClick={() => setIsOpen(false)}>Features</a>
+              <a href="#approach" className="text-black text-lg" onClick={() => setIsOpen(false)}>Our Approach</a>
             </li>
             <li>
-              <a href="#docs" className="text-black text-lg" onClick={() => setIsOpen(false)}>Docs</a>
-            </li>
-            <li>
-              <a href="#blog" className="text-black text-lg" onClick={() => setIsOpen(false)}>Blog</a>
+              <a href="#contact_us" className="text-black text-lg" onClick={() => setIsOpen(false)}>Contact us</a>
             </li>
           </ul>
         </motion.div>

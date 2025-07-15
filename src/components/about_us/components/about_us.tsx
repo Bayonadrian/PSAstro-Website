@@ -35,7 +35,7 @@ function AboutUs() {
           loop
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src="AboutUs.mp4" type="video/mp4" />
+          <source src="/videos/AboutUs.mp4" type="video/mp4" />
           Your web browser does not tolerate videos
         </video>
 
